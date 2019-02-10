@@ -2,12 +2,15 @@
 /*
 Plugin Name: WP Save Search Results
 Description: Save search text and show it in admin panel
-Version: 1.0.0
+Version: 1.0.20190210
 Author: Pavel
 Author URI: //plance.top/
 */
 
 defined('ABSPATH') or die('No script kiddies please!');
+
+/** Include language */
+load_plugin_textdomain('lance', false, basename(__DIR__).DIRECTORY_SEPARATOR.'languages'.DIRECTORY_SEPARATOR);
 
 /** Include Core */
 include plugin_dir_path(__FILE__).'includes'.DIRECTORY_SEPARATOR.'core.php';
