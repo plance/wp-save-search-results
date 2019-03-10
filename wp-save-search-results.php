@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Save Search Results
 Description: Save search text and show it in admin panel
-Version: 1.0.20190210
+Version: 1.0.20190310
 Author: Pavel
 Author URI: //plance.top/
 */

@@ -61,8 +61,8 @@ class WPSaveSearchResult_INIT
 		if($Query -> is_search() && $Query -> is_main_query())
 		{
 			$s = esc_attr(wp_unslash($Query -> get('s')));
-			
-			if(in_array($s, $_SESSION['wpfsr__search_results'], true) == false)
+
+			if(empty($s) == false && in_array($s, $_SESSION['wpfsr__search_results'], true) == false)
 			{
 				if(!empty($_SESSION['wpfsr__search_results']))
 				{
